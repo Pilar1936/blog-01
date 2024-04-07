@@ -1,16 +1,13 @@
 {
-  "name": "blog-challenge",
+  "name": "blog",
   "version": "1.0.0",
-  "description": "",
+  "description": "A blog created using sequelize, express.js and handlebars",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "seed": "node seeds/seed.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "connect-session-sequelize": "^7.1.7",
@@ -18,12 +15,7 @@
     "express": "^4.18.2",
     "express-handlebars": "^7.1.2",
     "express-session": "^1.18.0",
-    "mysql2": "^3.9.3", // Actualizado a la versión 3.9.3
-    "sequelize": "^6.6.0" // Actualizado a la versión 6.6.0
-  },  
-  "devDependencies": {
-    "eslint": "^7.12.1",
-    "eslint-config-prettier": "^6.15.0",
-    "prettier": "^2.1.2"
+    "mysql2": "^3.9.1",
+    "sequelize": "^6.36.0"
   }
 }
