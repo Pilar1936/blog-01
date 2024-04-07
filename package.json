@@ -18,10 +18,9 @@
     "express": "^4.18.2",
     "express-handlebars": "^7.1.2",
     "express-session": "^1.18.0",
-    "mysql2": "^3.9.1",
-    "sequelize": "^6.36.0"
-
-  },
+    "mysql2": "^3.9.3", // Actualizado a la versión 3.9.3
+    "sequelize": "^6.6.0" // Actualizado a la versión 6.6.0
+  },  
   "devDependencies": {
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
