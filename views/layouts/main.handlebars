@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLOG PAGE!</title>
+  <!-- Bootstrap CSS Link -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<header class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="/">Blog</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          {{#if logged_in}}
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link btn btn-link text-dark" id="logout">Logout</button>
+          </li>
+          {{else}}
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+          </li>
+          {{/if}}
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mt-5">
+    {{{ body }}}
+  </main>
+
+  <!-- Bootstrap JS and jQuery Links -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+ <footer class="navbar navbar-expand-lg navbar-dark bg-primary text-center text-dark py-3">
+    <p class="mx-auto">Maria p@2024</p>
+</footer>
+
+
+</body>
+
+</html>

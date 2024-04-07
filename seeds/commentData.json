@@ -1,0 +1,12 @@
+[
+    {
+        "user_id": 1,
+        "contenido_post":"Hola mundo",
+        "post_id": 2
+    },
+    {
+        "user_id": 1,
+        "contenido_post":"Hola Bro",
+        "post_id": 2
+    }
+]
